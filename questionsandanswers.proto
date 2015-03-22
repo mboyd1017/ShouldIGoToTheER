@@ -1,0 +1,6 @@
+package SERQuestions;
+
+message Question {
+    required string questionText = 1;
+    repeated string answers = 2;
+}

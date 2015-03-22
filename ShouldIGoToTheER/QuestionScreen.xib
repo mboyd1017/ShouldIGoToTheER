@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SERQuestionScreenViewController">
+            <connections>
+                <outlet property="questionLabel" destination="Vxm-0l-V0F" id="zpZ-57-OZR"/>
+                <outlet property="view" destination="JvI-X7-WSE" id="a7s-2L-ZNj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JvI-X7-WSE">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <pickerView contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jj0-Gj-Dfj">
+                    <rect key="frame" x="0.0" y="255" width="600" height="162"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="51A-2f-eHw"/>
+                        <outlet property="delegate" destination="-1" id="Oii-U9-B43"/>
+                    </connections>
+                </pickerView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxm-0l-V0F" userLabel="questionLabel">
+                    <rect key="frame" x="279" y="208" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="jj0-Gj-Dfj" secondAttribute="centerX" id="8VF-6x-Npt"/>
+                <constraint firstAttribute="centerX" secondItem="Vxm-0l-V0F" secondAttribute="centerX" id="m0O-B6-bCK"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
